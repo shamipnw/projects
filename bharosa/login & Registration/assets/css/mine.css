@@ -1,0 +1,109 @@
+.serachBarMember{ height:29px; margin-top:4px;}
+
+.PTypewidget .itemdiv.memberdiv {
+    width: 207px;
+    margin: 3px 5px;
+}
+
+.page-header.page-header2 {
+    margin: 0 0 10px;
+    border-bottom: 1px dotted #e2e2e2;
+    padding-bottom: 10px;
+    padding-top: 7px;
+	width:100%;
+	float:left;
+}
+
+.widget-box[class*=widget-color-]>.widget-header {
+    color: #FFF;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.widget-toolbar.black{ color:black}
+
+.widget-header-small>.widget-title.black{ color:black}
+
+.widget-header>.widget-title.black{ color:black}
+
+.message-navbar2 {
+    line-height: 24px;
+    padding: 10px 12px;
+    border: 1px solid #D6E1EA;
+    border-color: #D6E1EA transparent;
+    background-color: #F1F5FA;
+    text-align: left;
+    position: relative;
+}
+
+button.btn.btn-info.btn-view {
+    padding: 3px 20px 4px;
+}
+
+button.btn.btn-info.btn-view2 {
+    padding: 3px 10px 4px;
+}
+
+table.commontblListing{ margin-bottom:3px;}
+
+table.commontblListing tr th{ background:#6fb3e0; color:white; font-size:13px;}
+
+.padformSelect{text-align:right; margin-top:6px;}
+.padformSelect2{ margin-top:6px;}
+.padformSelect3{ margin-top:10px;}
+
+.schemeselectbox{text-align:right; margin-top:0;}
+.schemeheight{ height:37px;}
+.alirnRIght{ text-align:right}
+
+.modal-dialog.modalTransaction {
+    width: 100%;
+    max-width: 900px;
+}
+
+.commontable .table thead:first-child tr{ background:white}
+
+
+.nav-list>li .submenu>li>a {
+    display: block;
+    position: relative;
+    padding: 7px 0 9px 37px;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: dotted;
+    font-size: 12px;
+}
+.bordermember {
+    /*border: solid 1px #A8AAAB;*/
+    padding: 10px;
+    text-align: center;
+   /* background: #F3F3F3;*/
+	margin-bottom: 10px;
+}
+
+.dtlSta {
+    font-size: 14px;
+    font-weight: 600;
+     color: #4F91BF; 
+    padding: 0px 17px 5px;
+}
+
+.row.searchBtn {
+    margin-top: 10px;
+    border-top: solid 1px #E0E0E0;
+    padding-top: 10px;
+}
+
+
+@media screen and ( max-width: 768px ) {
+.schemeselectbox {fff
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.padform {
+    margin: 10px 0;
+}	
+	
+	
+}
