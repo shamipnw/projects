@@ -1,0 +1,30 @@
+git config --global user.name "sham4opalina"
+git config --global user.email "shambhukumar72@gmail.com"
+
+cd existing_git_repo
+
+git remote set-url origin  https://github.com/sham4opalina/projects.git
+git remote set-url origin  git@github.com:sham4opalina/bulk.git
+
+
+
+> git reset --mixed origin/master
+> git add .
+> git commit -m "necessary"
+> git push origin master
+
+cloning
+git clone https://github.com/sham4opalina/shambhutest.git
+
+
+git rm file1.txt
+git commit -m "remove file1.txt"
+
+remove folder
+$ rm -rvf /directory path
+
+-r = remove directories and their contents recursively
+-v = explain what is being done
+-f = ignore nonexistent files, never prompt
+
+
