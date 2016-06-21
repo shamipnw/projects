@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dashboard</title>
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="fullcalendar/fullcalendar.css" media="screen">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css">
+</head>
+
+<body>
+	<!-- HEADER start -->
+	<header>
+		<div class="container">
+			<div class="row">
+	            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        		
+	        		<!-- Brand and toggle get grouped for better mobile display -->
+	        		<div class="navbar-header">
+			        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			        	  <span class="sr-only">Toggle navigation</span>
+			        	  <span class="icon-bar"></span>
+			        	  <span class="icon-bar"></span>
+			        	  <span class="icon-bar"></span>
+			        	</button>
+			        	<a class="navbar-brand" href="index.html"><img src="images/logo_edustruct.png" alt="Edustruct"></a>
+			        </div>
+
+			        <!-- Collect the nav links, forms, and other content for toggling -->
+			        <div class="collapse navbar-collapse navbar-ex1-collapse">
+			            <ul class="nav navbar-nav navbar-right navbar-user">
+	          				<li class="dropdown alerts-dropdown">
+	          					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/icon_notification.png" alt="notification"> <span class="badge">3</span></a>
+
+						        <ul class="dropdown-menu">
+						          <li><a href="#"><span class="label label-default">Icon Notification</span></a></li>
+						          <li><a href="#"><span class="label label-success">Success</span></a></li>
+						          <li><a href="#"><span class="label label-info">Info</span></a></li>
+						          <li><a href="#"><span class="label label-warning">Warning</span></a></li>
+						          <li><a href="#"><span class="label label-danger">Danger</span></a></li>
+						          <li class="divider"></li>
+						        </ul>
+				            </li>
+	            
+				            <li class="dropdown messages-dropdown">
+		              			<a  href="#" class="dropdown-toggle msg_box" data-toggle="dropdown"><img src="images/icon_messages.png" alt="notification"> <span class="badge">3</span></a>
+						        
+						        <ul class="dropdown-menu">
+						        	<li class="dropdown-header">7 New Messages</li>
+						        	<li class="message-preview">
+						        		<a href="#">
+						        			<span class="avatar"><img src="images/avtar.jpg" alt="messages"></span>
+						        			<span class="name">John Smith:</span>
+						        			<span class="message">Lorem Ipsum</span>
+						        			<span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+						        		</a>
+						        	</li>
+						        	<li class="divider"></li>
+						        	<li class="message-preview">
+						        		<a href="#">
+						        			<span class="avatar"><img src="images/avtar.jpg" alt="messages"></span>
+						        			<span class="name">John Smith:</span>
+						        			<span class="message">Lorem Ipsum</span>
+						        			<span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+						        		</a>
+						        	</li>
+						        	<li class="divider"></li>
+						        	<li class="message-preview">
+						        		<a href="#">
+						        			<span class="avatar"><img src="images/avtar.jpg" alt="messages"></span>
+						        			<span class="name">John Smith:</span>
+						        			<span class="message">Lorem Ipsum</span>
+						        			<span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+						        		</a>
+						        	</li>
+						        	<li class="divider"></li>
+						        	<li><a href="#">View All</a></li>
+						        </ul>
+	            			</li>
+	            
+				            <li class="dropdown alerts-dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/icon_notification.png" alt="notification"> <span class="badge">3</span></a>
+
+				            	<ul class="dropdown-menu">
+				            		<li><a href="#"><span class="label label-default">Icon Notification</span></a></li>
+				            		<li><a href="#"><span class="label label-success">Success</span></a></li>
+				            		<li><a href="#"><span class="label label-info">Info</span></a></li>
+				            		<li><a href="#"><span class="label label-warning">Warning</span></a></li>
+				            		<li><a href="#"><span class="label label-danger">Danger</span></a></li>
+				            		<li class="divider"></li>
+				            	</ul>
+				            </li>
+
+				            <li class="dropdown messages-dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				            		<img src="images/icon_task.png" alt="icon_task"> <span class="badge">7</span>
+				            	</a>
+
+				            	<ul class="dropdown-menu">
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            		<li class="divider"></li>
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            		<li class="divider"></li>
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            		<li class="divider"></li>
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            		<li class="divider"></li>
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            	</ul>
+				            </li>
+	            
+				            <li class="dropdown user-dropdown user_box">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="images/avtar.jpg" class="avatar_border"> <span>John Doe <i class="glyphicon glyphicon-chevron-down user_carat " style="font-weight:normal;"></i></span></a>
+				            	<ul class="dropdown-menu">
+				            		<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+				            		<li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+				            		<li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+				            		<li class="divider"></li>
+				            		<li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+				            	</ul>
+				            </li>
+				        </ul>
+	        		</div><!-- /.navbar-collapse -->
+	      		</nav>
+            
+            
+            
+				<!--<div class="col col-sm-2" id="logo"><a href="#"><img src="images/logo_edustruct.png" alt="Edustruct"></a></div>-->
+				<!-- /end info -->
+
+			</div><!-- /end .row -->
+		</div><!-- /end .container -->
+	</header>
+	<!-- HEADER end -->
+
+	<div id="body" data-role="page">
+		<div class="container">
+			
+            
+            <div id="intro" class="row">
+				<div id="nav" class="col col-sm-2"></div>
+
+				
+			</div>
+            
+            <!-- /end #intro -->
+			<div class="clear"></div>
+			<div class="row" id="faux_bg">
+				<aside class="col col-sm-2" data-role="panel" id="mypanel">
+					<a href="#" id="nav_trigger" class="pull-right"><i class="fa fa-bars fa-2x"></i></a>
+					
+					<div class="clear"></div>
+
+					<ul id="nav_items">
+						<li><i class="fa fa-dashboard fa-lg"></i> <a href="#">Dashboard</a></li>
+						<li><i class="fa fa-list-alt fa-lg"></i> <a href="#">Courses</a></li>
+						<li><i class="fa fa-list-ul fa-lg"></i> <a href="#">Task Creator</a></li>
+						<li><i class="fa fa-briefcase fa-lg"></i> <a href="#">My School</a></li>
+						<li><i class="fa fa-copy fa-lg"></i> <a href="#">Grade Book</a></li>
+						<li><i class="fa fa-folder-open fa-lg"></i> <a href="#">File Folder</a></li>
+						<li><i class="fa fa-bar-chart-o fa-lg"></i> <a href="#">Analytics</a></li>
+						<li><i class="fa fa-calendar fa-lg"></i> <a href="#">Events</a></li>
+						<li><i class="fa fa-users fa-lg"></i> <a href="#">Groups</a></li>
+						<li><i class="fa fa-comments fa-lg"></i> <a href="#">Learning Communities</a></li>
+						<li><i class="fa fa-envelope fa-lg"></i> <a href="#">Messages</a></li>
+						<li><i class="fa fa-camera-retro fa-lg"></i> <a href="#">Blog</a></li>
+					</ul>
+				</aside>
+
+				<section id="main" class="col col-sm-10">
+                <h2 id="page_title" class="col col-sm-10">Dashboard <span>Overview and more</span></h2>
+					<div class="container">
+						<div class="row">
+							<div class="overview col-lg-3" id="display_courses">
+								<div class="panel">
+									<div class="panel-body">
+										<h3><i class="fa fa-list-alt fa-2x"></i> Courses</h3>
+									</div>
+
+									<div class="panel-footer">
+                                        <div class="row">
+						                    <div class="col-xs-6">
+						                    	<a href="#">View More </a>
+						                    </div>
+
+						                    <div class="col-xs-6 text-right">
+						                    	<a href="#"> <i class="fa fa-chevron-circle-right fa-2x"></i></a>
+						                    </div>
+						                </div>
+									</div>
+								</div>
+							</div><!-- /end #display_courses -->
+
+							<div class="overview col-lg-3" id="display_events">
+								<div class="panel">
+									<div class="panel-body">
+										<h3><i class="fa fa-list-alt fa-2x"></i> Events</h3>
+									</div>
+
+									<div class="panel-footer">
+						                <div class="row">
+						                    <div class="col-xs-6">
+						                    	<a href="#">View More </a>
+						                    </div>
+
+						                    <div class="col-xs-6 text-right">
+						                    	<a href="#"> <i class="fa fa-chevron-circle-right fa-2x"></i></a>
+						                    </div>
+						                </div>
+									</div>
+								</div>
+							</div><!-- /end #display_events -->
+
+							<div class="overview col-lg-3" id="display_groups">
+								<div class="panel">
+									<div class="panel-body">
+										<h3><i class="fa fa-group fa-2x"></i> Groups</h3>
+									</div>
+
+									<div class="panel-footer">
+	                                    <div class="row">
+						                    <div class="col-xs-6">
+							                    <a href="#">View More </a>
+						                    </div>
+
+						                    <div class="col-xs-6 text-right">
+							                    <a href="#"> <i class="fa fa-chevron-circle-right fa-2x"></i></a>
+						                    </div>
+						                </div>
+									</div>
+								</div>
+							</div><!-- /end #display_groups -->
+
+							<div class="overview col-lg-3" id="display_learn">
+								<div class="panel">
+									<div class="panel-body">
+										<h3><i class="fa fa-comments fa-2x"></i> <span>Learning Communities</span></h3>
+									</div>
+
+									<div class="panel-footer">
+	                                    <div class="row">
+						                    <div class="col-xs-6">
+						                    	<a href="#">View More </a>
+						                    </div>
+
+						                    <div class="col-xs-6 text-right">
+						                    	<a href="#"> <i class="fa fa-chevron-circle-right fa-2x"></i></a>
+						                    </div>
+						                </div><!-- /end .row -->
+									</div><!-- /end .panel-footer -->
+								</div><!-- /end .panel-footer -->
+							</div><!-- /end #display_learn -->
+
+							<div class="clear"></div>
+						</div><!-- /end .row -->
+						
+						<div class="container">
+							<div class="row">
+								<ol class="breadcrumb col-sm-9" id="breadcrumb">
+								  <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+								  <li><a href="#" class="active">Dashboard</a></li>
+								</ol>
+
+								<div class="col-sm-3" id="display_date">
+									<p><i class="fa fa-calendar"></i> November 15, 2013</p>
+								</div>
+							</div><!-- /end .row -->
+						</div>
+						
+						<article>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="panel panel-default column_trim" id="custom_panel_analytics">
+										<div class="panel-heading">
+											<h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> User Analytics</h3>
+										</div>
+
+										<div class="panel-body">
+											<img src="images/panel1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="panel panel-default column_trim" id="custom_panel_overview">
+										<div class="panel-heading">
+											<h3 class="panel-title"><i class="fa fa-bell"></i> Task Overview</h3>
+										</div>
+
+										<div class="panel-body">
+											<form role="form" action="">
+
+												<!-- List group -->
+												<ul class="list-group">
+													<li class="list-group-item">
+														<div class="checkbox"><input name="check1" id="check1" type="checkbox">
+																	<label for="check1"><span></span> </label> overview about the task will come here <span class="bdge_square pull-right"><i class="fa fa-cog"></i></span></label></div>
+													</li>
+													<li class="list-group-item">
+														<div class="checkbox"><label for=""><input name="check2" id="check2" type="checkbox">
+																	<label for="check2"><span></span> </label> overview about the task will come here <span class="bdge_square pull-right"><i class="fa fa-cog"></i></span></label></div>
+													</li>
+													<li class="list-group-item">
+														<div class="checkbox"><label for=""><input name="check3" id="check3" type="checkbox">
+																	<label for="check3"><span></span> </label> overview about the task will come here <span class="bdge_square pull-right"><i class="fa fa-cog"></i></span></label></div>
+													</li>
+													<li class="list-group-item">
+														<div class="checkbox"><label for=""><input name="check4" id="check4" type="checkbox">
+																	<label for="check4"><span></span> </label> overview about the task will come here <span class="bdge_square pull-right"><i class="fa fa-cog"></i></span></label></div>
+													</li>
+													<li class="list-group-item">
+														<div class="checkbox"><label for=""><input name="check5" id="check5" type="checkbox">
+																	<label for="check5"><span></span> </label> overview about the task will come here <span class="bdge_square pull-right"><i class="fa fa-cog"></i></span></label></div>
+													</li>
+													<li class="list-group-item">
+														<div class="checkbox"><label for=""><input name="check6" id="check6" type="checkbox">
+																	<label for="check6"><span></span> </label> overview about the task will come here <span class="bdge_square pull-right"><i class="fa fa-cog"></i></span></label></div>
+													</li>
+													<li class="list-group-item">
+														<div class="checkbox"><label for=""><input name="check7" id="check7" type="checkbox">
+																<label for="check7"><span></span> </label> overview about the task will come here <span class="bdge_square pull-right"><i class="fa fa-cog"></i></span></label></div>
+													</li>
+												</ul>
+											</form>
+										</div>
+									</div><!-- /end #custom_panel_overview -->
+								</div>
+							</div><!-- /end .row -->
+						</article>
+
+						<div class="clear"></div>
+
+						<article>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="panel panel-default column_trim" id="custom_panel_events">
+										<div class="panel-heading">
+											<h3 class="panel-title"><i class="fa fa-calendar"></i> Event Calender</h3>
+										</div>
+
+										<div class="panel-body">
+											<div id='calendar'></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="panel panel-default column_trim" id="custom_panel_activities">
+										<div class="panel-heading activity_panel">
+											<ul class="nav-tabs">
+  <li class="active"><a href="#home" data-toggle="tab"><i class="fa fa-bullhorn" ></i> Activities</a></li>
+  <li><a href="#profile" data-toggle="tab"><i class="fa fa-folder" ></i> File Folder</a></li>
+</ul><!--<h3 class="panel-title"><i class="fa fa-bell"></i> Activities</h3>-->
+										</div>
+
+										<div class="panel-body">
+											<form role="form" action="">
+
+												<!-- List group -->
+												<ul class="list-group">
+													<li class="list-group-item2">
+													<span class="bdge_square_act clr_blue pull-left"><i class="fa fa-check"></i></span><div class="act_pad">You have 4 pending tasks <span class="bdge_square2 clr_yellow clr_text_white">Take action<i class="fa fa-share"></i></span></div>
+													</li>
+                                                    <div class="clear"></div>
+                                                    <li class="list-group-item2">
+													<span class="bdge_square_act clr_green  pull-left"><i class="fa fa-bar-chart-o"></i></span><div class="act_pad clr_text_blue">Lorem Ipsum is simply dummy text of the printing</div>
+													</li>
+                                                    
+                                                    <div class="clear"></div>
+                                                    
+                                                    
+                                                    <li class="list-group-item2">
+													<span class="bdge_square_act clr_red  pull-left"><i class="fa fa-bar-chart-o"></i></span><div class="act_pad">Lorem Ipsum is simply dummy text of the printing Lorem</div>
+													</li>
+                                                    <div class="clear"></div>
+                                                    <li class="list-group-item2">
+													<span class="bdge_square_act clr_blue pull-left"><i class="fa fa-shopping-cart"></i></span><div class="act_pad">Lorem Ipsum is simply dummy text of the printing  <span class="bdge_square2 clr_blue clr_text_white">Take action <i class="fa fa-check"></i></span></div>
+													</li>
+                                                    
+                                                    <li class="list-group-item2">
+													<span class="bdge_square_act clr_green pull-left"><i class="fa fa-user"></i></span><div class="act_pad">You have 4 pending tasks <span class="bdge_square2 clr_blue clr_text_white">Take action <i class="fa fa-check"></i></span></div>
+													</li>
+                                                    <div class="clear"></div>
+                                                    <li class="list-group-item2">
+													<span class="bdge_square_act clr_grey pull-left"><i class="fa fa-bell"></i></span><div class="act_pad">You have 4 pending tasks</div>
+													</li>
+                                                    
+                                                    <div class="clear"></div>
+                                                    
+                                                    <li class="list-group-item2">
+													<span class="bdge_square_act clr_grey pull-left"><i class="fa fa-briefcase"></i></span><div class="act_pad clr_text_blue">Lorem Ipsum is simply dummy text of the printing  </div>
+													</li>
+                                                    
+                                                    <div class="clear"></div>
+                                                    <li class="list-group-item2">
+													<span class="bdge_square_act clr_blue pull-left"><i class="fa fa-check"></i></span><div class="act_pad">You have 4 pending tasks <span class="bdge_square2 clr_yellow clr_text_white">Take action <i class="fa fa-share"></i></span></div>
+													</li>
+                                                    <div class="clear"></div>
+                                                    <li class="list-group-item2">
+													<span class="bdge_square_act clr_red pull-left"><i class="fa fa-bar-chart-o"></i></span><div class="act_pad clr_text_blue">Lorem Ipsum is simply dummy text of the printing Lorem</div>
+													</li>
+												</ul>
+											</form>
+										</div><!-- /end .panel-body -->
+									</div><!-- /end #custom_panel_activities -->
+								</div>
+							</div><!-- /end .row -->
+						</article>
+					</div><!-- /end .container -->
+				</section>
+			</div><!-- /end #faux_bg -->
+
+			<div class="clear">&nbsp;</div>
+		</div><!-- /end .container -->
+	</div><!-- /end #body -->
+
+	<!-- FOOTER start -->
+    <section id="footer">
+	    <div class="container">
+	       	<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 footer_links ">Home  |  Features  |  Terms of Use  |  Blog  |  Jobs  |  Contact Us<br><span>Copyrights@2013, All rights reserved Edustruct</span>
+	     	</div>
+
+		    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6  pull-right f_s_cus" id="footer_social"><a href="#"><img src="images/icon_fb.png" alt="social"></a><a href="#"><img src="images/icon_tweet.png" alt="social"></a><a href="#"><img src="images/icon_gDrive.png" alt="social"></a><a href="#"><img src="images/icon_tube.png" alt="social"></a>
+	        </div><!-- /end #footer_social -->
+	     
+	    </div>
+  	</section>
+	<!-- FOOTER end -->
+
+</body>
+	
+	<!-- Scripts -->
+    
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="fullcalendar/fullcalendar.js"></script>
+    <script src="fullcalendar/gcal.js"></script>
+    <script src="assets/scripts.js"></script>
+	<script>
+	    $(function() {
+	        var calendar = $('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+	        selectable: true,
+	        selectHelper: true,
+	        select: function(start, end, allDay) {
+	            var title = prompt('Event Title:');
+	            if (title) {
+	                calendar.fullCalendar('renderEvent',
+	                    {
+	                        title: title,
+	                        start: start,
+	                        end: end,
+	                        allDay: allDay
+	                    },
+	                    true // make the event "stick"
+	                );
+	            }
+	            calendar.fullCalendar('unselect');
+	        },
+	        droppable: true, // this allows things to be dropped onto the calendar !!!
+	        drop: function(date, allDay) { // this function is called when something is dropped
+	            // retrieve the dropped element's stored Event Object
+	            var originalEventObject = $(this).data('eventObject');
+	            // we need to copy it, so that multiple events don't have a reference to the same object
+	            var copiedEventObject = $.extend({}, originalEventObject);
+	            // assign it the date that was reported
+	            copiedEventObject.start = date;
+	            copiedEventObject.allDay = allDay;
+	            // render the event on the calendar
+	            // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+	            $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+	            
+	            // is the "remove after drop" checkbox checked?
+	            if ($('#drop-remove').is(':checked')) {
+	                // if so, remove the element from the "Draggable Events" list
+	                $(this).remove();
+	            }
+	        },
+			editable: true,
+			// US Holidays
+			events: 'http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic'
+			});
+	    });
+	    $('#external-events div.external-event').each(function() {
+	        // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+	        // it doesn't need to have a start or end
+	        var eventObject = {
+	            title: $.trim($(this).text()) // use the element's text as the event title
+	        };
+	        
+	        // store the Event Object in the DOM element so we can get to it later
+	        $(this).data('eventObject', eventObject);
+	        
+	        // make the event draggable using jQuery UI
+	        $(this).draggable({
+	            zIndex: 999999999,
+	            revert: true,      // will cause the event to go back to its
+	            revertDuration: 0  //  original position after the drag
+	        });
+	    });
+	</script>
+    <script src="js/application.js"></script>
+     <!--<script src="js/app.js" type="text/javascript"></script>-->
+</html>

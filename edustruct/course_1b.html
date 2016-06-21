@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Courses</title>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="fullcalendar/fullcalendar.css" media="screen">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css">
+</head>
+
+<body>
+	<!-- HEADER start -->
+	<header>
+		<div class="container">
+			<div class="row">
+	            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        		
+	        		<!-- Brand and toggle get grouped for better mobile display -->
+	        		<div class="navbar-header">
+			        	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			        	  <span class="sr-only">Toggle navigation</span>
+			        	  <span class="icon-bar"></span>
+			        	  <span class="icon-bar"></span>
+			        	  <span class="icon-bar"></span>
+			        	</button>
+			        	<a class="navbar-brand" href="index.html"><img src="images/logo_edustruct.png" alt="Edustruct"></a>
+			        </div>
+
+			        <!-- Collect the nav links, forms, and other content for toggling -->
+			        <div class="collapse navbar-collapse navbar-ex1-collapse">
+			            <ul class="nav navbar-nav navbar-right navbar-user">
+	          				<li class="dropdown alerts-dropdown">
+	          					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/icon_notification.png" alt="notification"> <span class="badge">3</span></a>
+
+						        <ul class="dropdown-menu">
+						          <li><a href="#"><span class="label label-default">Icon Notification</span></a></li>
+						          <li><a href="#"><span class="label label-success">Success</span></a></li>
+						          <li><a href="#"><span class="label label-info">Info</span></a></li>
+						          <li><a href="#"><span class="label label-warning">Warning</span></a></li>
+						          <li><a href="#"><span class="label label-danger">Danger</span></a></li>
+						          <li class="divider"></li>
+						        </ul>
+				            </li>
+	            
+				            <li class="dropdown messages-dropdown">
+		              			<a  href="#" class="dropdown-toggle msg_box" data-toggle="dropdown"><img src="images/icon_messages.png" alt="notification"> <span class="badge">3</span></a>
+						        
+						        <ul class="dropdown-menu">
+						        	<li class="dropdown-header">7 New Messages</li>
+						        	<li class="message-preview">
+						        		<a href="#">
+						        			<span class="avatar"><img src="images/avtar.jpg" alt="messages"></span>
+						        			<span class="name">John Smith:</span>
+						        			<span class="message">Lorem Ipsum</span>
+						        			<span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+						        		</a>
+						        	</li>
+						        	<li class="divider"></li>
+						        	<li class="message-preview">
+						        		<a href="#">
+						        			<span class="avatar"><img src="images/avtar.jpg" alt="messages"></span>
+						        			<span class="name">John Smith:</span>
+						        			<span class="message">Lorem Ipsum</span>
+						        			<span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+						        		</a>
+						        	</li>
+						        	<li class="divider"></li>
+						        	<li class="message-preview">
+						        		<a href="#">
+						        			<span class="avatar"><img src="images/avtar.jpg" alt="messages"></span>
+						        			<span class="name">John Smith:</span>
+						        			<span class="message">Lorem Ipsum</span>
+						        			<span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+						        		</a>
+						        	</li>
+						        	<li class="divider"></li>
+						        	<li><a href="#">View All</a></li>
+						        </ul>
+	            			</li>
+	            
+				            <li class="dropdown alerts-dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/icon_notification.png" alt="notification"> <span class="badge">3</span></a>
+
+				            	<ul class="dropdown-menu">
+				            		<li><a href="#"><span class="label label-default">Icon Notification</span></a></li>
+				            		<li><a href="#"><span class="label label-success">Success</span></a></li>
+				            		<li><a href="#"><span class="label label-info">Info</span></a></li>
+				            		<li><a href="#"><span class="label label-warning">Warning</span></a></li>
+				            		<li><a href="#"><span class="label label-danger">Danger</span></a></li>
+				            		<li class="divider"></li>
+				            	</ul>
+				            </li>
+
+				            <li class="dropdown messages-dropdown">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				            		<img src="images/icon_task.png" alt="icon_task"> <span class="badge">7</span>
+				            	</a>
+
+				            	<ul class="dropdown-menu">
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            		<li class="divider"></li>
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            		<li class="divider"></li>
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            		<li class="divider"></li>
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            		<li class="divider"></li>
+				            		<li class="message-preview">
+				            			<a href="#">
+				            			  <span class="name">Task</span>
+				            			  <span class="message">1</span>
+				            			  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+				            			</a>
+				            		</li>
+				            	</ul>
+				            </li>
+	            
+				            <li class="dropdown user-dropdown user_box">
+				            	<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="images/avtar.jpg" class="avatar_border"> <span>John Doe <i class="glyphicon glyphicon-chevron-down user_carat " style="font-weight:normal;"></i></span></a>
+				            	<ul class="dropdown-menu">
+				            		<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+				            		<li><a href="#"><i class="fa fa-envelope"></i> Inbox</a></li>
+				            		<li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+				            		<li class="divider"></li>
+				            		<li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+				            	</ul>
+				            </li>
+				        </ul>
+	        		</div><!-- /.navbar-collapse -->
+	      		</nav>
+            
+            
+            
+				<!--<div class="col col-sm-2" id="logo"><a href="#"><img src="images/logo_edustruct.png" alt="Edustruct"></a></div>-->
+				<!-- /end info -->
+
+			</div><!-- /end .row -->
+		</div><!-- /end .container -->
+	</header>
+	<!-- HEADER end -->
+
+	<div id="body" data-role="page">
+		<div class="container">
+			<div id="intro" class="row">
+				<div id="nav" class="col col-sm-2"></div>
+			</div><!-- /end #intro -->
+
+			<div class="clear"></div>
+
+			<div class="row" id="faux_bg">
+				<aside class="col col-sm-2" data-role="panel" id="mypanel">
+					<a href="#" id="nav_trigger" class="pull-right"><i class="fa fa-bars fa-2x"></i></a>
+					<div class="clear"></div>
+					<ul id="nav_items">
+						<li><i class="fa fa-dashboard fa-lg"></i> <a href="#">Dashboard</a></li>
+						<li><i class="fa fa-list-alt fa-lg"></i> <a href="#">Courses</a></li>
+						<li><i class="fa fa-list-ul fa-lg"></i> <a href="#">Task Creator</a></li>
+						<li><i class="fa fa-briefcase fa-lg"></i> <a href="#">My School</a></li>
+						<li><i class="fa fa-copy fa-lg"></i> <a href="#">Grade Book</a></li>
+						<li><i class="fa fa-folder-open fa-lg"></i> <a href="#">File Folder</a></li>
+						<li><i class="fa fa-bar-chart-o fa-lg"></i> <a href="#">Analytics</a></li>
+						<li><i class="fa fa-calendar fa-lg"></i> <a href="#">Events</a></li>
+						<li><i class="fa fa-users fa-lg"></i> <a href="#">Groups</a></li>
+						<li><i class="fa fa-comments fa-lg"></i> <a href="#">Learning Communities</a></li>
+						<li><i class="fa fa-envelope fa-lg"></i> <a href="#">Messages</a></li>
+						<li><i class="fa fa-camera-retro fa-lg"></i> <a href="#">Blog</a></li>
+					</ul>
+				</aside>
+
+				<section id="main" class="col col-sm-10">
+					<h2 id="page_title" class="col col-sm-10">Units <span>Details of Units and Lessons</span></h2>
+					<div class="container">
+						<div class="row">
+							<div class="overview col-lg-3" id="display_courses">
+								<div class="panel">
+									<div class="panel-body">
+										<h3><i class="fa fa-list-alt fa-2x"></i> Courses</h3>
+									</div>
+
+									<div class="panel-footer">
+                                        <div class="row">
+						                    <div class="col-xs-6">
+						                    	<a href="#">View More </a>
+						                    </div>
+
+						                    <div class="col-xs-6 text-right">
+						                    	<a href="#"> <i class="fa fa-chevron-circle-right fa-2x"></i></a>
+						                    </div>
+						                </div>
+									</div>
+								</div>
+							</div><!-- /end #display_courses -->
+
+							<div class="overview col-lg-3" id="display_events">
+								<div class="panel">
+									<div class="panel-body">
+										<h3><i class="fa fa-list-alt fa-2x"></i> Events</h3>
+									</div>
+
+									<div class="panel-footer">
+						                <div class="row">
+						                    <div class="col-xs-6">
+						                    	<a href="#">View More </a>
+						                    </div>
+
+						                    <div class="col-xs-6 text-right">
+						                    	<a href="#"> <i class="fa fa-chevron-circle-right fa-2x"></i></a>
+						                    </div>
+						                </div>
+									</div>
+								</div>
+							</div><!-- /end #display_events -->
+
+							<div class="overview col-lg-3" id="display_groups">
+								<div class="panel">
+									<div class="panel-body">
+										<h3><i class="fa fa-group fa-2x"></i> Groups</h3>
+									</div>
+
+									<div class="panel-footer">
+	                                    <div class="row">
+						                    <div class="col-xs-6">
+							                    <a href="#">View More </a>
+						                    </div>
+
+						                    <div class="col-xs-6 text-right">
+							                    <a href="#"> <i class="fa fa-chevron-circle-right fa-2x"></i></a>
+						                    </div>
+						                </div>
+									</div>
+								</div>
+							</div><!-- /end #display_groups -->
+
+							<div class="overview col-lg-3" id="display_learn">
+								<div class="panel">
+									<div class="panel-body">
+										<h3><i class="fa fa-comments fa-2x"></i> <span>Learning Communities</span></h3>
+									</div>
+
+									<div class="panel-footer">
+	                                    <div class="row">
+						                    <div class="col-xs-6">
+						                    	<a href="#">View More </a>
+						                    </div>
+
+						                    <div class="col-xs-6 text-right">
+						                    	<a href="#"> <i class="fa fa-chevron-circle-right fa-2x"></i></a>
+						                    </div>
+						                </div><!-- /end .row -->
+									</div><!-- /end .panel-footer -->
+								</div><!-- /end .panel-footer -->
+							</div><!-- /end #display_learn -->
+
+							<div class="clear"></div>
+						</div><!-- /end .row -->
+						
+						<!-- BREADCRUMBS START -->
+						<div class="container">
+							<div class="row">
+								<ol class="breadcrumb col-sm-9" id="breadcrumb">
+								  <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+								  <li><a href="#" class="active">Messages</a></li>
+								</ol>
+
+								<div class="col-sm-3" id="display_date">
+									<p><i class="fa fa-calendar"></i> November 15, 2013</p>
+								</div>
+							</div><!-- /end .row -->
+						</div>
+						<!-- BREADCRUMBS START -->
+						
+						<article>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="panel panel-default bdr_green column_trim" id="custom_panel_analytics">
+										<div class="panel-heading clr_green">
+											<h3 class="panel-title"><i class="fa fa-list-alt fa-3x"></i> Math 2 (Unit 01)</h3>
+										</div>
+
+										<div class="panel-body">
+											<div class="row">
+												<div class="col col-md-9">
+													<form class="form-horizontal" action="" id="units_form" role="form">
+														<div class="form-group">
+															<label for="course_title" class="col-sm-2 control-label">Title:</label>
+															<div class="col-sm-10">
+																<input type="text" class="form-control" id="course_title" placeholder="">
+															</div>
+														</div>
+
+														<div class="form-group">
+															<label for="" class="col-sm-2 control-label">Description</label>
+															<div class="col-sm-10">
+																<img src="images/wysiwyg_editor.jpg" alt="">
+															</div>
+														</div>
+
+														<div class="form-group">
+															<label for="course_start_date" class="col-sm-2 control-label">Start Date <span class="clr_text_red"><sup>*</sup></span></label>
+															<div class="col-sm-4">
+																<input type="text" class="form-control" id="course_start_date" placeholder="">
+															</div>
+
+															<label for="course_end_date" class="col-sm-2 control-label">End Date <span class="clr_text_red"><sup>*</sup></span></label>
+															<div class="col-sm-4">
+																<input type="text" class="form-control" id="course_end_date" placeholder="">
+															</div>
+														</div>
+
+														<div class="form-group">
+															<label for="course_title" class="col-sm-2 control-label">Strand / Standard</label>
+															<div class="col-sm-10">
+																<select class="form-control" name="" id="">
+																	<option value="">CC.12th-N.RN.1</option>
+																	<option value="">CC.12th-N.RN.1</option>
+																	<option value="">CC.12th-N.RN.1</option>
+																	<option value="">CC.12th-N.RN.1</option>
+																	<option value="">CC.12th-N.RN.1</option>
+																</select>
+
+																<div class="clearfix"></div>
+
+																<p>CC.9-12.N.RN.1 Extend the properties of exponents to rational exponents. Explain how the definition of the meaning of rational exponents follows from extending the properties of integer exponents to those values, allowing for a notation for radicals in terms of rational exponents. For example, we define 5^(1/3) to be the cube root of 5 because we want [5^(1/3)]^3 = 5^[(1/3) x 3] to hold, so [5^(1/3)]^3 must equal 5.</p>
+															</div>
+														</div>
+													</form>
+												</div>
+												
+												<div class="col col-md-3">
+													<button class="btn btn-block">Create Lesson</button><br>
+													<button class="btn btn-block">Cancel</button><br>
+													<button class="btn btn-block">Common Core<br>Math</button><br>
+													<button class="btn btn-block">Course<br>Math 2</button><br>
+													<button class="btn btn-block">Grade<br>Twelfth Grade (12<sup>th</sup>)</button>
+												</div>
+											</div>
+											
+											<hr>
+											
+											<div class="row" id="course_media">
+												<div class="well well-lg">
+													<div class="media">
+														<a href="#" class="pull-left"><img src="images/file_upload/icon_folder_2.png" alt=""></a>
+
+														<div class="media-body">
+															<h4 class="media-heading clr_text_red">
+																Lesson 01 <span class="course_media_edit"> <a href="#"><i class="fa fa-search clr_text_red"></i></a> <a href="#"><i class="fa fa-pencil-square-o clr_text_red"></i></a> <a href="#"><i class="fa fa-times clr_text_red"></i></a></span>
+															</h4>
+
+															<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+														</div>
+													</div>
+												</div>
+												
+												<div class="well well-lg">
+													<div class="media">
+														<a href="#" class="pull-left"><img src="images/file_upload/icon_folder_2.png" alt=""></a>
+
+														<div class="media-body">
+															<h4 class="media-heading clr_text_red">Lesson 02 <span class="course_media_edit"><a href="#"><i class="fa fa-search clr_text_red"></i></a> <a href="#"><i class="fa fa-pencil-square-o clr_text_red"></i></a> <a href="#"><i class="fa fa-times clr_text_red"></i></a></span></h4>
+
+															<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+														</div>
+													</div>
+												</div>
+												
+												<div class="well well-lg">
+													<div class="media">
+														<a href="#" class="pull-left"><img src="images/file_upload/icon_folder_2.png" alt=""></a>
+
+														<div class="media-body">
+															<h4 class="media-heading clr_text_red">Lesson 03 <span class="course_media_edit"><a href="#"><i class="fa fa-search clr_text_red"></i></a> <a href="#"><i class="fa fa-pencil-square-o clr_text_red"></i></a> <a href="#"><i class="fa fa-times clr_text_red"></i></a></span></h4>
+
+															<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+														</div>
+													</div>
+
+													<div id="media_inner_content">
+														<h3>Math 2</h3>
+														<p><strong>Created By:</strong> Bill Jones on <small>Monday, November 25, 2013 11:13 AM</small></p>
+
+														<div class="row">
+															<div class="col col-md-3 col-sm-6">
+																<button class="btn btn-default">Post a Discussion</button>
+															</div>
+															<div class="col col-md-3 col-sm-6">
+																<button class="btn btn-default">Add an Assignment</button>
+															</div>
+															<div class="col col-md-3 col-sm-6">
+																<button class="btn btn-default">New Assignment</button>
+															</div>
+															<div class="col col-md-3 col-sm-6">
+																<button class="btn btn-default">Start Video Discussion</button>
+															</div>
+														</div>
+
+														<div class="row unit_subpanel">
+															<div class="col col-md-2">
+																<img src="images/media_obj_image-3.jpg" alt="">
+															</div>
+
+															<div class="media col col-md-10">
+																<div class="media">
+																	<a href="#" class="pull-left"><img src="images/file_upload/icon_ms_ps.png" alt=""></a>
+
+																	<div class="media-body">
+																		<h4 class="media-heading clr_text_cyan">Lesson Notes 01 <span class="course_media_edit"><a href="#"><i class="fa fa-times clr_text_green"></i></a> <a href="#"><i class="fa fa-cog clr_text_green"></i></a> <a href="#"><i class="fa fa-tag clr_text_green"></i></a></span></h4>
+
+																		<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conse quat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
+
+																		<p class="">Wednesday, November 27, 2013 02:00 PM <span class="course_media_edit"><a href="#"><i class="fa fa-thumbs-up clr_text_cyan"></i></a> <strong>LIKE</strong> <a href="#"><i class="fa fa-comments clr_text_cyan"></i></a> <strong>COMMENTS</strong> (2)</span></p>
+
+																		<div class="media submedia">
+																			<a href="#" class="pull-left"><img src="images/submedia_obj_image-3.jpg" alt=""></a>
+
+																			<div class="media-body">
+																				<h4 class="media-heading clr_text_cyan">John Doe: <span class="course_media_edit"><a href="#"><i class="fa fa-thumbs-up clr_text_cyan"></i></a> <strong>LIKE</strong> <a href="#"><i class="fa fa-times clr_text_green"></i></a></span></h4>
+
+																				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+
+																				<p><small>Wednesday, November 27, 2013 06:00 PM</small></p>
+
+																				<form action="" role="form">
+																					<div class="form-group">
+																						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Type Reply Here.. ">
+																					</div>
+																				</form>
+																			</div>
+																		</div>
+
+																		<div class="media submedia">
+																			<a href="#" class="pull-left"><img src="images/submedia_obj_image-3.jpg" alt=""></a>
+
+																			<div class="media-body">
+																				<h4 class="media-heading clr_text_cyan">John Doe: <span class="course_media_edit"><a href="#"><i class="fa fa-thumbs-up clr_text_cyan"></i></a> <strong>LIKE</strong> <a href="#"><i class="fa fa-times clr_text_green"></i></a></span></h4>
+
+																				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+
+																				<p><small>Wednesday, November 27, 2013 06:00 PM</small></p>
+
+																				<form action="" role="form">
+																					<div class="form-group">
+																						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Type Reply Here.. ">
+																					</div>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div><!-- /end .unit_subpanel -->
+
+														<hr>
+
+														<div class="row unit_subpanel">
+															<div class="col col-md-2">
+																<img src="images/media_obj_image-3.jpg" alt="">
+															</div>
+
+															<div class="media col col-md-10">
+																<div class="media">
+																	<a href="#" class="pull-left"><img src="images/file_upload/icon_ms_ps.png" alt=""></a>
+
+																	<div class="media-body">
+																		<h4 class="media-heading clr_text_cyan">Lesson Notes 02 <span class="course_media_edit"><a href="#"><i class="fa fa-times clr_text_green"></i></a> <a href="#"><i class="fa fa-cog clr_text_green"></i></a> <a href="#"><i class="fa fa-tag clr_text_green"></i></a></span></h4>
+
+																		<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conse quat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
+
+																		<p class="">Wednesday, November 27, 2013 02:00 PM <span class="course_media_edit"><a href="#"><i class="fa fa-thumbs-up clr_text_cyan"></i></a> <strong>LIKE</strong> <a href="#"><i class="fa fa-comments clr_text_cyan"></i></a> <strong>COMMENTS</strong> (2)</span></p>
+																	</div>
+																</div>
+															</div>
+														</div><!-- /end .unit_subpanel -->
+													</div>
+												</div>
+												
+												<div class="well well-lg">
+													<div class="media">
+														<a href="#" class="pull-left"><img src="images/file_upload/icon_folder_2.png" alt=""></a>
+
+														<div class="media-body">
+															<h4 class="media-heading clr_text_red">Lesson 04 <span class="course_media_edit"><a href="#"><i class="fa fa-search clr_text_red"></i></a> <a href="#"><i class="fa fa-pencil-square-o clr_text_red"></i></a> <a href="#"><i class="fa fa-times clr_text_red"></i></a></span></h4>
+
+															<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+														</div>
+													</div>
+												</div>
+												
+												<div class="well well-lg">
+													<div class="media">
+														<a href="#" class="pull-left"><img src="images/file_upload/icon_folder_2.png" alt=""></a>
+
+														<div class="media-body">
+															<h4 class="media-heading clr_text_red">Lesson 05 <span class="course_media_edit"><a href="#"><i class="fa fa-search clr_text_red"></i></a> <a href="#"><i class="fa fa-pencil-square-o clr_text_red"></i></a> <a href="#"><i class="fa fa-times clr_text_red"></i></a></span></h4>
+
+															<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!-- /end #custom_panel_analytics -->
+								</div>
+							</div><!-- /end .row -->
+						</article>
+
+						<div class="clear"></div>
+					</div><!-- /end .container -->
+				</section>
+			</div><!-- /end #faux_bg -->
+
+			<div class="clear">&nbsp;</div>
+		</div><!-- /end .container -->
+	</div><!-- /end #body -->
+
+	<!-- FOOTER start -->
+    <section id="footer">
+	    <div class="container">
+	       	<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 footer_links"><a href="#">Home</a> | <a href="#">Features</a> | <a href="#">Terms of Use</a> | <a href="#">Blog</a> | <a href="#">Jobs</a> | <a href="#">Contact Us</a><br><span>Copyrights@2013, All rights reserved Edustruct</span>
+	     	</div>
+
+		    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6  pull-right f_s_cus" id="footer_social"><a href="#"><img src="images/icon_fb.png" alt="social"></a><a href="#"><img src="images/icon_tweet.png" alt="social"></a><a href="#"><img src="images/icon_gDrive.png" alt="social"></a><a href="#"><img src="images/icon_tube.png" alt="social"></a>
+	        </div><!-- /end #footer_social -->
+	     
+	    </div>
+  	</section>
+	<!-- FOOTER end -->
+	<!-- Scripts -->
+    
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="fullcalendar/fullcalendar.js"></script>
+    <script src="fullcalendar/gcal.js"></script>
+    <script src="assets/scripts.js"></script>
+	<script>
+	    $(function() {
+	        var calendar = $('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+	        selectable: true,
+	        selectHelper: true,
+	        select: function(start, end, allDay) {
+	            var title = prompt('Event Title:');
+	            if (title) {
+	                calendar.fullCalendar('renderEvent',
+	                    {
+	                        title: title,
+	                        start: start,
+	                        end: end,
+	                        allDay: allDay
+	                    },
+	                    true // make the event "stick"
+	                );
+	            }
+	            calendar.fullCalendar('unselect');
+	        },
+	        droppable: true, // this allows things to be dropped onto the calendar !!!
+	        drop: function(date, allDay) { // this function is called when something is dropped
+	            // retrieve the dropped element's stored Event Object
+	            var originalEventObject = $(this).data('eventObject');
+	            // we need to copy it, so that multiple events don't have a reference to the same object
+	            var copiedEventObject = $.extend({}, originalEventObject);
+	            // assign it the date that was reported
+	            copiedEventObject.start = date;
+	            copiedEventObject.allDay = allDay;
+	            // render the event on the calendar
+	            // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+	            $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+	            
+	            // is the "remove after drop" checkbox checked?
+	            if ($('#drop-remove').is(':checked')) {
+	                // if so, remove the element from the "Draggable Events" list
+	                $(this).remove();
+	            }
+	        },
+			editable: true,
+			// US Holidays
+			events: 'http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic'
+			});
+	    });
+	    $('#external-events div.external-event').each(function() {
+	        // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+	        // it doesn't need to have a start or end
+	        var eventObject = {
+	            title: $.trim($(this).text()) // use the element's text as the event title
+	        };
+	        
+	        // store the Event Object in the DOM element so we can get to it later
+	        $(this).data('eventObject', eventObject);
+	        
+	        // make the event draggable using jQuery UI
+	        $(this).draggable({
+	            zIndex: 999999999,
+	            revert: true,      // will cause the event to go back to its
+	            revertDuration: 0  //  original position after the drag
+	        });
+	    });
+	</script>
+	<!-- Sliding panel -->
+    
+    <script src="js/application.js"></script>
+</body>
+</html>

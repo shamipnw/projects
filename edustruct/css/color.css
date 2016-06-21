@@ -1,0 +1,52 @@
+.clr_blue{
+background-color:#57b5e3;	
+}
+
+.clr_green{
+background-color:#3c9240!important;	
+}
+.bdr_green {
+border: 1px solid #3c9240!important;	
+}
+
+.bdr_blue {
+border-bottom: 1px solid #44aae2!important;	
+}
+
+.bdr_blue_bck{
+background-color:#44aae2!important;		
+}
+
+.clr_red{
+background-color:#ed4e2a;	
+}
+
+.clr_violet {
+	background: #6d399b;
+}
+
+.clr_grey{
+background-color:#999999;	
+}
+
+.clr_yellow{
+background-color:#fcb322;	
+}
+.clr_text_white{
+color:#fff;
+font-size:12px!important;
+display: inline-block;
+max-width: 85px;
+}
+.clr_text_blue{
+color:#0d638f;
+}
+.clr_text_cyan {
+	color: #44aae2;
+}
+.clr_text_red{
+color:#ed4e2a;
+}
+.clr_text_green{
+color:#3cc051;
+}

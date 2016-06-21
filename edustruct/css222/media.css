@@ -1,0 +1,38 @@
+@media (max-width: 767px) {
+	.navbar-collapse {
+  background-color: #6c6c6c;
+  border-color: #999999;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+  background-color:#6c6c6c;
+  margin-right:10px;
+  border-bottom:#000 solid 1px;
+  width:100%;
+}
+
+.msg_box{
+height:40px;	
+}
+}
+
+
+@media (max-width: 768px) {
+.f_s_cus{
+float:none!important;
+margin:auto auto!important;
+text-align:center!important;
+}
+.footer_links{
+text-align:center!important;	
+}
+
+#footer_social{
+width:100%;
+float:left!important;
+padding-top:20px;
+}
+
+}
