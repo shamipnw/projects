@@ -1,0 +1,214 @@
+@media screen and ( max-width: 1290px ) {
+	#nmAnniversary_nav {
+		
+	}
+	#nmAnniversary_nav ul li { font-size: 15px; }
+}
+
+
+
+@media screen and ( max-width: 1290px ) {
+	.content {
+	    padding: 0 12px;
+	}
+
+	header#nmAnniversary_header {
+	    padding: 20px 12px;
+	    width: 100%;
+	    height: 75px;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 99;
+	    background: #214fb5;
+	}
+}
+
+
+
+@media screen and ( max-width: 991px ) {
+	.infographics_display,
+	.infographics_thumbs {
+		width: 100%;
+		clear: both;
+	}
+}
+
+
+
+@media screen and ( max-width: 870px ) {
+	#fp-nav.right {
+		right: 12px;
+	}
+
+	.nav_btn {
+	    display: block;
+	}
+
+	nav#nmAnniversary_nav {
+		display: none;
+		width: 100%;
+		min-height: 400px;
+		background: rgba(255, 255, 255, 1);
+		margin-top: 10px;
+		-webkit-box-shadow: 0 0 5px rgba(0, 0, 10, 0.25);
+		box-shadow: 0 0 5px rgba(0, 0, 10, 0.25);
+	}
+	nav#nmAnniversary_nav ul { display: block; width: 100%; float: right; }
+	nav#nmAnniversary_nav ul li { float: none; }
+	nav#nmAnniversary_nav ul li a { display: block; color: #8A8A8A; margin: 12px; padding-bottom: 5px; border-bottom: 2px solid transparent; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; text-align: center; }
+	nav#nmAnniversary_nav ul li.nav_active a { border-bottom: 2px solid #fc8708; }
+	nav#nmAnniversary_nav ul li a:hover { border-bottom: 2px solid #fc8708; text-decoration: none; }
+	nav#nmAnniversary_nav ul li a:focus { outline: 0; text-decoration:}
+
+	#fp-nav ul li,
+	.fp-slidesNav ul li {
+	    display: block;
+	    width: 14px;
+	    height: 13px;
+	    margin: 15px 0;
+	    position:relative;
+	}
+}
+
+
+@media screen and ( max-width: 767px ) {
+	.page_content_inner {
+	    padding: 0 12px;
+	}
+
+	.govpage_content {
+	    padding: 0;
+	}
+
+	#govpage_content_main {
+		padding-top: 125px;
+	}
+}
+
+
+@media screen and ( max-width: 550px ) {
+	.page_content_item > a { display: block; width: 90%; height: 475px; background: #FFF; margin: 0 auto; border-radius: 3px; text-align: center; }
+	.page_content_item > a figure { padding: 15px 0 17px; }
+	.page_content_item > a h3 { font-size: 18px; padding: 17px 15px 12px; }
+	.page_content_item > a p { font-size: 14px; padding: 12px 15px 12px; }
+
+	.page_content_item_alt > span { display: block; width: 90%; height: 475px; background: #FFF; margin: 0 auto; border-radius: 3px; text-align: center; }
+	.page_content_item_alt > span figure { padding: 15px 0 17px; }
+	.page_content_item_alt > span h3 { font-size: 18px; padding: 17px 15px 12px; }
+	.page_content_item_alt > span p { font-size: 14px; padding: 12px 15px 12px; }
+
+	section.page_content_item_share {
+	    width: 100%;
+	    height: 100%;
+	    border-radius: 50%;
+	    position: absolute;
+	    left: 0; top: 0;
+	    background: rgba(252, 135, 8, 0.8);
+	}
+
+	#fp-nav ul li,
+	.fp-slidesNav ul li {
+	    display: block;
+	    width: 14px;
+	    height: 13px;
+	    margin: 7px 0;
+	    position:relative;
+	}
+	
+	.pagetitle_logo {
+		margin-bottom: 15px;
+	}
+	.pagetitle_logo figure { margin: 0 auto; }
+
+	figure.cutout {
+	    display: none;
+	}
+
+	section.page_content_item_share {
+	    width: 100%;
+	    height: 100%;
+	    border-radius: 3px;
+	    position: absolute;
+	    left: 0; top: 0;
+	    background: rgba(252, 135, 8, 0.8);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+vk Media ******************************************/
+
+@media screen and (max-width:1024px){
+.homeLogo{
+	display:block;
+	text-align:center;
+	margin-top: 10%;
+    position:relative;
+	}
+.homeLogo img{
+	float:none;
+	width:100%;
+	max-width:317px;
+	 
+	}
+
+.homeTxt{
+	display:block;
+	text-align:center;
+	float:none;
+	margin-bottom: 20px;
+	}
+
+.circleTabs {
+    color: #FFF;
+    font-size: 24px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    float: none;
+    margin: 0 auto;
+	
+	
+	}
+	
+.rightNav_toggle {
+    right: 10px !important;
+  }
+.cbp-spmenu-vertical a {
+     margin: 0px 15px;
+ }
+ .cbp-spmenu-vertical a:hover {
+ 
+	margin:0 15px;
+ }
+	
+}
+
+@media screen and (max-width:414px){
+	}
+	/*************************************
+	Close VK media**********************************/
