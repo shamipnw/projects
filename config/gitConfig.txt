@@ -21,10 +21,16 @@ git rm file1.txt
 git commit -m "remove file1.txt"
 
 remove folder
-$ rm -rvf /directory path
+$ rm -rvf myfile
 
 -r = remove directories and their contents recursively
 -v = explain what is being done
 -f = ignore nonexistent files, never prompt
+
+
+
+
+
+https://www.youtube.com/watch?v=KmyCw-3aKvo
 
 
